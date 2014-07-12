@@ -28,26 +28,23 @@
         android:layout_marginTop="4dp"
         android:background="@android:color/white" />
 
-    
-        <FrameLayout>
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content">
-				<ImageView  
-				    android:id="@+id/image"
-				    android:layout_width="wrap_content" 
-				    android:layout_height="wrap_content" 
-				    android:src="@drawable/nuts"
-				/>
-		        <TextView
-		            android:id="@+id/description"
-		            style="@style/CardText"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_marginLeft="8dp"
-		            android:ellipsize="end"
-		            android:maxLines="4"
-		            android:text="" />
-		 </FrameLayout>
-    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selectable_background_cardbank"
+        android:gravity="center_vertical"
+        android:padding="4dp" 
+        >
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/CardText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="" />
+    </LinearLayout>
 
 </LinearLayout>
