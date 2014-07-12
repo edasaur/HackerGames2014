@@ -10,7 +10,7 @@ import com.fima.cardsui.objects.Card;
 public class MyCard extends Card {
 
 	public MyCard(String title){
-		super(title);
+		super(title, title);
 	}
 
 	@Override
